@@ -1,0 +1,23 @@
+
+import React from 'react'
+import { AppRegistry } from 'react-native'
+import App from './app/app.js'
+
+import ApolloClient, { createNetworkInterface } from 'apollo-client'
+import { ApolloProvider } from 'react-apollo'
+
+const Client = () => {
+  const networkInterface = createNetworkInterface({
+    uri: 'http://localhost:3000/graphql'
+  })
+  const client = new ApolloClient({
+    networkInterface
+  })
+  return (
+    <ApolloProvider client={client}>
+      <App />
+      {/* <h1> Hola </h1> */}
+    </ApolloProvider>)
+}
+
+AppRegistry.registerComponent('boilerplate', () => Client)
