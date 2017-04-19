@@ -16,7 +16,6 @@ const Client = () => {
   return (
     <ApolloProvider client={client}>
       <App />
-      {/* <h1> Hola </h1> */}
     </ApolloProvider>)
 }
 
