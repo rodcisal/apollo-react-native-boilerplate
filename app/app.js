@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text } from 'react-native'
+import { Tabs } from './config/router'
 
 // import { graphql } from 'react-apollo'
 // import gql from 'graphql-tag'
@@ -12,9 +13,7 @@ export default class App extends Component {
 
   render () {
     return (
-      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-        <Text style={{textAlign: 'center'}}>Find President Info</Text>
-      </View>
+      <Tabs />
     )
   }
 }
