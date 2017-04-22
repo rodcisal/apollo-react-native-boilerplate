@@ -10,3 +10,9 @@ cd [your-app-name]
 yarn
 react-native run-ios or react-native run-android
 ```
+
+
+## Project Structure
+
+Inspired by [this](https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0)
+
