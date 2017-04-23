@@ -1,13 +1,36 @@
 import React from 'react'
 import { TabNavigator } from 'react-navigation'
-import Step1 from '../components/Step1'
-import Step2 from '../components/Step2'
+import Home from '../components/Home'
+import List from '../components/List'
+import Profile from '../components/Profile'
+import Library from '../components/Library'
+import Help from '../components/Help'
+import {styles} from '../styles'
 
 export const Tabs = TabNavigator({
-  Step1: {
-    screen: Step1
+  Home: {
+    screen: Home
   },
-  Step2: {
-    screen: Step2
+  List: {
+    screen: List
+  },
+  Profile: {
+    screen: Profile
+  },
+  Library: {
+    screen: Library
+  },
+  Help: {
+    screen: Help
+  }
+}, {
+  tabBarOptions: {
+    showLabel: false,
+    inactiveBackgroundColor: styles.mainColor,
+    activeBackgroundColor: styles.secondaryColor,
+    style: {
+      backgroundColor: styles.mainColor,
+      height: 60
+    }
   }
 })

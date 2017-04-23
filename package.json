@@ -4,14 +4,17 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+		"test": "jest",
+		"devtools": "react-devtools"
 	},
 	"dependencies": {
 		"apollo-client": "^1.0.3",
 		"graphql-tag": "^2.0.0",
 		"react": "16.0.0-alpha.6",
 		"react-apollo": "^1.0.1",
+		"react-devtools": "^2.0.12",
 		"react-native": "0.43.3",
+		"react-native-vector-icons": "^4.0.1",
 		"react-navigation": "git+https://github.com/react-community/react-navigation.git"
 	},
 	"devDependencies": {
